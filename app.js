@@ -13,7 +13,7 @@ function exibirTextoNaTela(tag, texto){
 }
 
 function exibirmensagemInicial(){
-    exibirTextoNaTela("h1", "BEM VINDE AO JOGO DO NUMERO SECRETO");
+    exibirTextoNaTela("h1", "BEM VINDO AO JOGO DO NUMERO SECRETO");
     exibirTextoNaTela("p", `escolha um numero de 1 a ${numeroLimite}`);
 }
 exibirmensagemInicial();
@@ -36,12 +36,12 @@ function verificarChute() {
     } else {
         if (chute > numeroSecreto){
             exibirTextoNaTela("p", `Menos que ${chute}!`);
-            exibirTextoNaTela("h1", "Tenta Denovo!");
+            exibirTextoNaTela("h1", "Tenta Denovo!       ");
             tentativas = tentativas + 1;
     } else {
         if (chute < numeroSecreto){
             exibirTextoNaTela("p", `Mais que ${chute}!`);
-            exibirTextoNaTela("h1", "Tenta Denovo!");
+            exibirTextoNaTela("h1", "Tenta Denovo!       ");
             tentativas = tentativas + 1;
 
         }
